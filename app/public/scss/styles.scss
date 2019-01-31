@@ -3,19 +3,27 @@
     background: 
     /* top, transparent red */ 
     linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
+      rgba(0, 0, 0, 0.40), 
+      rgba(0, 0, 0, 0.40)
     ),
     /* bottom, image */
     url(../images/header.jpg) !important;
-    //background-image: url("../images/header.jpg") ,rgba(255, 0, 0, 0.25) !important;
+    //background-image: url("../images/header.jpg") ,rgba(255, 0, 0, 0.05) !important;
     background-size:     cover !important;                 
     background-repeat:   no-repeat !important;
     background-position: center center !important;
     height: 100vh !important;  
     .test{
         padding-top: 15%;
+        text-align: center;
+        h1 {
+            margin-bottom: 50px;
+        }
+        span {
+            width: 100px;
+        }
     }
+
 }
 .navbar {
     a {

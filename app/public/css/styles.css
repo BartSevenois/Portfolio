@@ -1,12 +1,17 @@
 /*** NAVBAR HOME ***/
 .navbar-home {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/header.jpg) !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/header.jpg) !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   height: 100vh !important; }
   .navbar-home .test {
-    padding-top: 15%; }
+    padding-top: 15%;
+    text-align: center; }
+    .navbar-home .test h1 {
+      margin-bottom: 50px; }
+    .navbar-home .test span {
+      width: 100px; }
 
 .navbar a {
   color: white !important; }
