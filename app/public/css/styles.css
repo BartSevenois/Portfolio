@@ -1,0 +1,22 @@
+/*** NAVBAR HOME ***/
+.navbar-home {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/header.jpg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  height: 100vh !important; }
+  .navbar-home .test {
+    padding-top: 15%; }
+
+.navbar a {
+  color: white !important; }
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background-color: #2b2b28 !important; }
+
+/*** WEBSITE ***/
+.website .block {
+  background-color: #eeeeee; }
+
+.website .uk-container {
+  padding: 80px 0px; }
