@@ -16,6 +16,9 @@
 .navbar a {
   color: white !important; }
 
+.uk-navbar-container {
+  padding: 0px 50px; }
+
 .uk-navbar-container:not(.uk-navbar-transparent) {
   background-color: #2b2b28 !important; }
 
@@ -25,3 +28,20 @@
 
 .website .uk-container {
   padding: 80px 0px; }
+
+.languagepicker .uk-navbar-dropdown {
+  width: 100px;
+  margin-right: 100px !important; }
+
+.languagepicker img {
+  margin-right: 10px;
+  margin-top: -3px; }
+
+.languagepicker a {
+  color: #2b2b28 !important; }
+
+.languagepicker .hoofd-link {
+  color: white !important; }
+  .languagepicker .hoofd-link img {
+    margin-right: 10px;
+    margin-top: 1px; }

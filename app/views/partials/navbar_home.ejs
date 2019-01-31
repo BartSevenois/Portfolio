@@ -4,29 +4,63 @@
         <nav class="uk-navbar-container">
             <div class="uk-container uk-container-expand">
                 <div uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#">Home</a></li>
+                            <li>
+                                <a href="#">Parent</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#">Home</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#over" uk-scroll="offset: 80">Over</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav languagepicker">
+                            <li>
+                                <% if(lang == "nl") {%>
+                                <a href="/?lang=nl" class="hoofd-link"><img src="http://i65.tinypic.com/2d0kyno.png" />NL</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="/?lang=en"><img src="http://i64.tinypic.com/fd60km.png" />EN</a></li>
+                                        <li><a href="/?lang=fr"><img src="http://i65.tinypic.com/300b30k.png" />FR</a></li>
+                                    </ul>
+                                </div>
+                                <% } else if (lang == "fr") { %>
+                                <a href="/?lang=fr" class="hoofd-link"><img src="http://i65.tinypic.com/300b30k.png" />FR</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="/?lang=en"><img src="http://i64.tinypic.com/fd60km.png" />EN</a></li>
+                                        <li><a href="/?lang=nl"><img src="http://i65.tinypic.com/2d0kyno.png" />NL</a></li>
+                                    </ul>
+                                </div>
+                                <% } else if (lang == "en") { %>
+                                <a href="/?lang=en" class="hoofd-link"><img src="http://i64.tinypic.com/fd60km.png" />EN</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="/?lang=nl"><img src="http://i65.tinypic.com/2d0kyno.png" />NL</a></li>
+                                        <li><a href="/?lang=fr"><img src="http://i65.tinypic.com/300b30k.png" />FR</a></li>
+                                    </ul>
+                                </div>
+                                <% } %>
+                            </li>
 
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">Home</a></li>
-                        <li>
-                            <a href="#">Parent</a>
-                            <div class="uk-navbar-dropdown">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Home</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#over" uk-scroll="offset: 80">Over</a></li>
-                    </ul>
-
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
 
     <div class="uk-container test">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+        <h1>
+            <%= __('header_title')%>
+        </h1>
         <a href="#over" uk-scroll="offset: 80"><span class="uk-icon-large" uk-icon="icon: chevron-down; ratio:1.5"></span></a>
     </div>
 
